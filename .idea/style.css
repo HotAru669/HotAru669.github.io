@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.page.show {
+    opacity: 1;
+}
+
+#page1 {
+    background-color: #FFC0CB;
+}
+
+#page2 {
+    background-color: #FFD700;
+}
+
+#page3 {
+    background-color: #87CEEB;
+}
+
+#navigation {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 50px;
+}
+
+.arrow {
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
